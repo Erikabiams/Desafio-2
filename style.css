@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {color: black;
+    font-family:"Lato" ,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0;;
+    margin: 0;
+    text-indent: 20px;
+    outline:none;
+    overflow: hidden;
+}
+body{
+    background-color :#F37820;  
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 20px;
+}
+
+.imglateral{
+width: 700px;
+}
+
+fieldset{
+    width: 700px;
+    background: #FFFAF2;
+    height: 600px;
+    border-radius: 5px;
+    border-color: black;
+   }
+.titulo{
+    text-align: center  ;
+
+}
+.envio_documentação_img{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    margin: 4px;
+    gap: 16px;
+}
+.imagem2{
+    width: 80%;
+}
+
+.div_separacao{
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+.envio{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+input{
+    color:black;
+    background-color: #faffec;
+    width:200px;
+    border-radius:10px;
+    height:25px;
+    margin-top: 4px;;
+    cursor: pointer;
+}
+input:hover{
+    background-color: #F37820;
+    }
+select:hover{
+    background-color: #F37820;
+}
+option{
+    max-width: 75%;
+}
+.label {
+    padding: 0;
+  margin:0;   
+}
+

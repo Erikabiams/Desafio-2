@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form>
+    <fieldset>
+      <div class="div_dados">
+          <h1 class="titulo"> Inscreva-se</h1> 
+          <div class="nome div_separacao">
+            <label for="iNome">Nome Completo:</label>
+            <input type="text" name="Nome" id="iNome" placeholder="Ex : Nome && Sobrenome ..." required>
+          </div>
+          <div class="div_separacao">
+            <label for="icpf">CPF:</label>
+            <input type="text" name="CPF" id="icpf" minlength="14" maxlength="14" placeholder="xxx.xxx.xxx-xx" required>
+            <label  id="RG" for="icpf">RG:</label>
+            <input type="text" name="CPF" id="icpf" minlength="13" maxlength="13" placeholder="xxxxxxxxxx-xx" required>
+          </div>
+          <div class="div_separacao">
+            <label for="idnascimento"> Data de nascimento : </label>
+            <input type="date" name="dnascimento" id="idnascimento">
+          </div>
+          <div class="div_separacao">          
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" name="telefone" id="itelefone" autocomplete="tel"  required placeholder="(xx) xxxxx-xxxx">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ex : meuemail123@gmail.com" required>
+          </div>
+          
+          <div class="div_separacao"> 
+            <label for="sexo">Gênero:</label>
+            <select name="igenero" id="igenero" required>
+                <option id="Selecione"value="">Selecione</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Outros">Outros</option>
+                <option value="outro">Prefiro não dizer</option>
+            </select>
+          </div>
+          <div class="div_separacao">
+            <label for="municipio">Munícipio:</label><br>
+            <input type="text" name="estado" id="municipio" placeholder="Ex : São Luís..." required>
+          </div>
+          <div class="div_separacao">
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="cep" id="icep" placeholder="Cep/Ex : 07601-115 ..." required>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="inumero" placeholder= "Número de Residência ..." required >
+          </div>   
+          <div class="div_separacao">
+          <label for="escolaridade">Escolaridade:</label>
+          <select id="escolaridade" name="escolaridade" required>
+              <option value="">Selecione</option>
+              <option value="fundamental"> Ensino Fundamental</option>
+              <option value="medio"> Ensino Médio Incompleto</option>
+              <option value="superior"> Ensino Médio</option>
+              <option value="superior"> Ensino Superior</option>
+              <option value="superior incompleto"> Ensino Superior Incompleto</option>
+          </select>
+          <label for="escola">Instiuição de ensino :</label>
+                <select name="escola" id="instituicao" >
+                      <option  value="">Selecione</option>
+                      <option value="publica">Pública</option>
+                      <option value="Particular">Particular</option>
+          </select>
+          </div>
+          <div class="envio_documentação_img div_separacao">
+            <div class="Comprovante1"><label for="CR">Comprovante de Residência</label>
+              <img class="imagem2" src="img_forms/img2.jpeg" alt="imgForms2"></p></div>
+            <div class="Comprovante2"><label for="Histórico">Histórico Escolar</label>
+              <img class="imagem2"  src="img_forms/img2.jpeg" alt="imgForms2"></div>
+            <div class=" Comprovante3"><label for="Rg">Documento de identidade</label>
+              <img class="imagem2" src="img_forms/img2.jpeg" alt="imgForms2"></div>
+          </div>
+      
+    </div>
+      <div class="envio">
+        
+          <input type="submit" value="Cancelar " class="submitC"></label>
+        
+          <input type="submit" value="Enviar" class="submitE"></label>
+    </div>
+    </fieldset> 
+  </form>
+  <img src="img_forms/imagem.png" alt="img1" class="imglateral"> 
+</body>
+</html>
